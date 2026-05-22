@@ -7,178 +7,212 @@
 <meta name="description" content="Nishikant Wase, PhD &mdash; 14+ years LC-MS, DMPK, phenotypic drug discovery, GxP bioanalysis. Consulting for pharma, biotech, CRO."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --ink:#0e0e0e;--white:#fff;--silver:#f3f4f6;--rule:#d2d6dc;
-  --red:#c8200a;--navy:#1a2e6b;--muted:#5a6678;
-  --fh:'Bebas Neue',sans-serif;--fb:'Source Serif 4',Georgia,serif;--fm:'JetBrains Mono','Courier New',monospace;
+  --navy:#0f3460;--blue:#1a5cb8;--sky:#93c5fd;--ink:#111827;
+  --white:#ffffff;--offwhite:#f8fafc;--silver:#f1f5f9;--rule:#e2e8f0;
+  --muted:#6b7280;--red:#dc2626;
+  --fh:'DM Serif Display',Georgia,serif;
+  --fb:'DM Sans',system-ui,sans-serif;
+  --fm:'DM Mono','Courier New',monospace;
 }
 html{scroll-behavior:smooth}
-body{font-family:var(--fb);background:var(--white);color:var(--ink);line-height:1.6}
+body{font-family:var(--fb);background:var(--white);color:var(--ink);line-height:1.6;font-size:15px}
 a{color:inherit;text-decoration:none}
-.container{max-width:1080px;margin:0 auto;padding:0 40px}
-.label{font-family:var(--fm);font-size:10px;letter-spacing:3px;color:var(--red);display:flex;align-items:center;gap:10px;margin-bottom:12px}
-.label::before{content:'';display:block;width:24px;height:2px;background:var(--red);flex-shrink:0}
-.sec-title{font-family:var(--fh);font-size:clamp(34px,4.5vw,48px);letter-spacing:1px;line-height:1;margin-bottom:8px}
-.sec-sub{font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:40px}
+.container{max-width:1100px;margin:0 auto;padding:0 48px}
+.label{font-family:var(--fm);font-size:10px;letter-spacing:3px;color:var(--blue);display:flex;align-items:center;gap:10px;margin-bottom:10px;text-transform:uppercase}
+.label::before{content:'';display:block;width:20px;height:2px;background:var(--blue);flex-shrink:0}
+.sec-title{font-family:var(--fh);font-size:clamp(32px,4vw,46px);line-height:1.05;margin-bottom:8px;letter-spacing:-.3px}
+.sec-sub{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:40px}
 .tag{font-family:var(--fm);font-size:9px;letter-spacing:1px;padding:3px 8px;border:1px solid var(--rule);color:var(--muted);display:inline-block}
 .badge{font-family:var(--fm);font-size:8px;letter-spacing:1px;padding:2px 7px;display:inline-block}
 .badge-n{background:var(--navy);color:#fff}
-.badge-s{background:#1a5c3a;color:#fff}
-.badge-ha{background:#5a3a00;color:#f5c842}
-.badge-pp{background:#3a5c1a;color:#d0f080}
-.btn{font-family:var(--fm);font-size:11px;letter-spacing:2px;padding:12px 26px;cursor:pointer;display:inline-block;transition:all .15s;border:2px solid var(--ink)}
-.btn-primary{background:var(--ink);color:var(--white)}
-.btn-primary:hover{background:var(--red);border-color:var(--red)}
-.btn-outline{background:transparent;color:var(--ink)}
-.btn-outline:hover{background:var(--ink);color:var(--white)}
-.btn-red{background:var(--red);color:#fff;border-color:var(--red)}
-.btn-red:hover{background:#a81a06;border-color:#a81a06}
-#sp{position:fixed;top:0;left:0;height:3px;background:var(--red);z-index:999;width:0%;transition:width .1s}
-.nav{background:var(--ink);position:sticky;top:0;z-index:200}
-.nav-in{display:flex;justify-content:space-between;align-items:stretch;padding:0 40px}
-.nav-brand{display:flex;align-items:center}
-.nav-bar{width:4px;background:var(--red);align-self:stretch;margin-right:16px}
-.nav-name{font-family:var(--fh);font-size:18px;letter-spacing:3px;color:var(--white);padding:14px 0}
-.nav-links{display:flex;list-style:none}
-.nav-links li a{display:block;padding:16px 14px;font-family:var(--fm);font-size:10px;letter-spacing:2px;color:#5a6678;border-left:1px solid rgba(255,255,255,.06);transition:color .15s}
-.nav-links li a:hover{color:#fff}
-.nav-cta{background:var(--red)!important;color:#fff!important;padding:16px 20px!important}
-.nav-cta:hover{background:#a81a06!important}
-.hero{border-bottom:2px solid var(--ink)}
-.hero-grid{display:grid;grid-template-columns:1fr 380px}
-.hero-left{padding:72px 56px;border-right:2px solid var(--ink)}
-.hero-eyebrow{font-family:var(--fm);font-size:10px;letter-spacing:4px;color:var(--red);margin-bottom:20px}
-.hero-position{font-family:var(--fh);font-size:clamp(48px,6vw,80px);line-height:.92;letter-spacing:1px;margin-bottom:28px}
-.hero-position em{color:var(--red);font-style:normal;display:block}
-.hero-sub{font-size:16px;line-height:1.85;color:#4a5a6a;max-width:480px;margin-bottom:28px;border-left:3px solid var(--red);padding-left:16px}
-.hero-meta{font-family:var(--fm);font-size:10px;letter-spacing:2px;color:var(--muted);margin-bottom:36px}
-.hero-actions{display:flex;gap:0;flex-wrap:wrap}
-.hero-right{background:var(--ink);display:grid;grid-template-rows:repeat(4,1fr)}
-.stat-cell{padding:20px 28px;border-bottom:1px solid rgba(255,255,255,.07);display:flex;flex-direction:column;justify-content:center}
-.stat-num{font-family:var(--fh);font-size:48px;color:var(--white);line-height:1}
-.stat-label{font-family:var(--fm);font-size:9px;letter-spacing:2px;color:#4a5060;margin-top:2px}
-.about{padding:72px 0;border-bottom:2px solid var(--ink)}
-.about-grid{display:grid;grid-template-columns:1fr 280px;gap:60px;align-items:start}
-.about-text p{font-size:15px;line-height:1.95;color:#3a4a5a;margin-bottom:20px}
-.about-text p em{font-style:italic}
-.about-text p strong{color:var(--ink)}
-.about-pull{font-size:18px;line-height:1.7;color:var(--ink);font-style:italic;border-left:3px solid var(--red);padding-left:18px;margin:28px 0}
-.sidebar-card{border:1px solid var(--rule);padding:18px;margin-bottom:12px}
-.sidebar-card h3{font-family:var(--fm);font-size:10px;letter-spacing:3px;color:var(--red);margin-bottom:10px;border-bottom:1px solid var(--rule);padding-bottom:7px}
-.sidebar-card p{font-size:13px;line-height:1.6;color:#3a4a5a}
+.badge-s{background:#166534;color:#fff}
+.badge-ha{background:#78350f;color:#fde68a}
+.badge-pp{background:#14532d;color:#bbf7d0}
+.btn{font-family:var(--fb);font-size:13px;font-weight:600;letter-spacing:.3px;padding:11px 24px;cursor:pointer;display:inline-block;transition:all .15s}
+.btn-primary{background:var(--navy);color:var(--white);border:2px solid var(--navy)}
+.btn-primary:hover{background:var(--blue);border-color:var(--blue)}
+.btn-outline{background:transparent;color:var(--navy);border:2px solid var(--navy)}
+.btn-outline:hover{background:var(--navy);color:var(--white)}
+.btn-white{background:var(--white);color:var(--navy);border:2px solid var(--white)}
+.btn-white:hover{background:var(--sky);border-color:var(--sky)}
+.btn-ghost{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.35)}
+.btn-ghost:hover{border-color:var(--white)}
+#sp{position:fixed;top:0;left:0;height:3px;background:var(--blue);z-index:999;width:0%;transition:width .1s}
+
+/* NAV */
+.nav{background:var(--white);border-bottom:1px solid var(--rule);position:sticky;top:0;z-index:200}
+.nav-in{display:flex;justify-content:space-between;align-items:center;height:60px;padding:0 48px}
+.nav-brand{display:flex;align-items:center;gap:10px}
+.nav-dot{width:9px;height:9px;background:var(--navy);border-radius:50%}
+.nav-name{font-family:var(--fh);font-size:17px;letter-spacing:.2px;color:var(--ink)}
+.nav-name span{color:var(--blue);font-style:italic}
+.nav-links{display:flex;gap:4px;list-style:none}
+.nav-links li a{display:block;padding:7px 14px;font-size:13px;font-weight:500;color:var(--muted);border-radius:4px;transition:all .15s}
+.nav-links li a:hover{color:var(--ink);background:var(--silver)}
+.nav-cta{background:var(--navy)!important;color:#fff!important;border-radius:4px!important;font-weight:600!important}
+.nav-cta:hover{background:var(--blue)!important}
+
+/* HERO */
+.hero{background:var(--navy);overflow:hidden;position:relative}
+.hero::before{content:'';position:absolute;top:-40px;right:-40px;width:400px;height:400px;background:rgba(255,255,255,.03);border-radius:50%}
+.hero::after{content:'';position:absolute;bottom:-60px;right:200px;width:250px;height:250px;background:rgba(255,255,255,.02);border-radius:50%}
+.hero-grid{display:grid;grid-template-columns:1fr 360px;position:relative;z-index:1}
+.hero-left{padding:80px 56px 72px;border-right:1px solid rgba(255,255,255,.08)}
+.hero-eyebrow{font-family:var(--fm);font-size:10px;letter-spacing:4px;color:var(--sky);margin-bottom:22px;opacity:.85;text-transform:uppercase}
+.hero-h{font-family:var(--fh);font-size:clamp(44px,5.5vw,68px);line-height:.95;color:var(--white);margin-bottom:28px;letter-spacing:-.5px}
+.hero-h em{color:var(--sky);font-style:italic;display:block}
+.hero-sub{font-size:15px;line-height:1.85;color:rgba(255,255,255,.65);max-width:460px;margin-bottom:16px;padding-left:14px;border-left:2px solid var(--sky)}
+.hero-meta{font-family:var(--fm);font-size:10px;letter-spacing:2px;color:rgba(255,255,255,.35);margin-bottom:36px;text-transform:uppercase}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.hero-right{display:grid;grid-template-rows:repeat(4,1fr)}
+.stat-cell{padding:22px 28px;border-bottom:1px solid rgba(255,255,255,.07);display:flex;flex-direction:column;justify-content:center;transition:background .15s}
+.stat-cell:hover{background:rgba(255,255,255,.04)}
+.stat-cell:last-child{border-bottom:none}
+.stat-n{font-family:var(--fh);font-size:46px;color:var(--white);line-height:1}
+.stat-l{font-family:var(--fm);font-size:9px;letter-spacing:2px;color:rgba(255,255,255,.35);margin-top:3px;text-transform:uppercase}
+
+/* ABOUT */
+.about{padding:80px 0;border-bottom:1px solid var(--rule)}
+.about-grid{display:grid;grid-template-columns:1fr 260px;gap:64px;align-items:start}
+.about-text p{font-size:15px;line-height:1.9;color:#374151;margin-bottom:18px}
+.about-text strong{color:var(--ink);font-weight:600}
+.about-pull{font-size:17px;line-height:1.75;color:var(--ink);font-family:var(--fh);font-style:italic;border-left:3px solid var(--blue);padding-left:18px;margin:28px 0;letter-spacing:-.1px}
+.about-status{font-family:var(--fm);font-size:10px;letter-spacing:3px;color:var(--blue);margin-top:24px;padding:12px 16px;background:var(--silver);border-left:3px solid var(--blue);text-transform:uppercase}
+.scard{border:1px solid var(--rule);padding:18px;margin-bottom:12px;border-radius:2px}
+.scard h3{font-family:var(--fm);font-size:9px;letter-spacing:3px;color:var(--blue);margin-bottom:10px;border-bottom:1px solid var(--rule);padding-bottom:7px;text-transform:uppercase}
+.scard p{font-size:13px;line-height:1.65;color:#4b5563}
 .links-row{display:flex;flex-wrap:wrap;gap:6px}
-.links-row a{font-family:var(--fm);font-size:10px;letter-spacing:1px;padding:4px 11px;border:1px solid var(--ink);transition:all .15s}
-.links-row a:hover{background:var(--ink);color:var(--white)}
-.services{padding:72px 0;background:var(--silver);border-bottom:2px solid var(--ink)}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--ink);border:2px solid var(--ink)}
-.svc-card{background:var(--white);padding:36px 28px;transition:all .15s}
-.svc-card:hover{background:var(--ink);color:var(--white)}
-.svc-card:hover .svc-title{color:var(--white)}
-.svc-card:hover .svc-body{color:rgba(255,255,255,.65)}
-.svc-card:hover .svc-list li{color:rgba(255,255,255,.5);border-color:rgba(255,255,255,.08)}
-.svc-num{font-family:var(--fh);font-size:52px;color:var(--rule);line-height:1;margin-bottom:16px;transition:color .15s}
-.svc-card:hover .svc-num{color:var(--red)}
-.svc-title{font-family:var(--fh);font-size:22px;letter-spacing:.5px;line-height:1.1;margin-bottom:12px;transition:color .15s}
-.svc-divider{width:24px;height:2px;background:var(--red);margin-bottom:14px}
-.svc-body{font-size:14px;line-height:1.8;color:#3a4a5a;margin-bottom:16px;transition:color .15s}
-.svc-list{list-style:none;display:flex;flex-direction:column;gap:0}
-.svc-list li{font-family:var(--fm);font-size:10px;letter-spacing:1px;color:var(--muted);padding:6px 0;border-bottom:1px dotted var(--rule);transition:all .15s}
+.links-row a{font-family:var(--fm);font-size:10px;letter-spacing:1px;padding:4px 11px;border:1px solid var(--rule);color:var(--ink);border-radius:2px;transition:all .15s}
+.links-row a:hover{background:var(--navy);color:var(--white);border-color:var(--navy)}
+
+/* SERVICES */
+.services{padding:80px 0;background:var(--offwhite);border-bottom:1px solid var(--rule)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc-card{background:var(--white);border:1px solid var(--rule);padding:32px 28px;border-top:3px solid var(--navy);transition:all .15s;border-radius:0 0 2px 2px}
+.svc-card:hover{box-shadow:0 8px 32px rgba(15,52,96,.08);transform:translateY(-3px);border-top-color:var(--blue)}
+.svc-num{font-family:var(--fm);font-size:10px;letter-spacing:3px;color:var(--blue);margin-bottom:14px;font-weight:500;text-transform:uppercase}
+.svc-title{font-family:var(--fh);font-size:21px;line-height:1.2;margin-bottom:12px;color:var(--ink)}
+.svc-div{width:28px;height:2px;background:var(--blue);margin-bottom:14px}
+.svc-body{font-size:13px;line-height:1.8;color:#4b5563;margin-bottom:16px}
+.svc-list{list-style:none;border-top:1px solid var(--rule);padding-top:14px;display:flex;flex-direction:column;gap:0}
+.svc-list li{font-family:var(--fm);font-size:10px;letter-spacing:.5px;color:var(--muted);padding:5px 0;border-bottom:1px dotted var(--rule);display:flex;align-items:center;gap:6px}
+.svc-list li::before{content:'';width:4px;height:4px;background:var(--blue);border-radius:50%;flex-shrink:0}
 .svc-list li:last-child{border-bottom:none}
-.cg{padding:80px 0;background:var(--ink);color:var(--white);border-bottom:4px solid var(--red)}
+
+/* CHEM GENETICS */
+.cg{padding:80px 0;background:var(--navy);border-bottom:3px solid var(--blue)}
 .cg-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
-.cg .label{color:var(--red)}
-.cg .label::before{background:var(--red)}
-.cg-title{font-family:var(--fh);font-size:clamp(30px,4vw,48px);letter-spacing:1px;line-height:1;color:var(--white);margin-bottom:16px}
-.cg-intro{font-size:15px;line-height:1.9;color:rgba(255,255,255,.65);margin-bottom:28px}
-.cg-step{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.cg .label{color:var(--sky);opacity:.8}
+.cg .label::before{background:var(--sky)}
+.cg-title{font-family:var(--fh);font-size:clamp(28px,3.5vw,42px);line-height:1.05;color:var(--white);margin-bottom:18px;letter-spacing:-.3px}
+.cg-intro{font-size:14px;line-height:1.9;color:rgba(255,255,255,.6);margin-bottom:28px}
+.cg-step{display:flex;gap:16px;align-items:flex-start;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.06)}
 .cg-step:last-child{border-bottom:none}
-.cg-sn{font-family:var(--fh);font-size:24px;color:var(--red);line-height:1;width:28px;flex-shrink:0}
-.cg-sb h4{font-family:var(--fm);font-size:9px;letter-spacing:3px;color:var(--red);margin-bottom:3px}
-.cg-sb p{font-size:13px;color:rgba(255,255,255,.55);line-height:1.65}
-.cg-translate{margin-top:28px;background:rgba(200,32,10,.1);border:1px solid rgba(200,32,10,.25);padding:20px}
-.cg-translate h4{font-family:var(--fm);font-size:9px;letter-spacing:3px;color:var(--red);margin-bottom:10px}
-.cg-translate ul{padding-left:14px}
-.cg-translate li{font-size:12px;color:rgba(255,255,255,.5);line-height:1.7;margin-bottom:4px}
+.cg-sn{font-family:var(--fh);font-size:22px;color:var(--sky);line-height:1;width:28px;flex-shrink:0}
+.cg-sb h4{font-family:var(--fm);font-size:9px;letter-spacing:3px;color:var(--sky);margin-bottom:4px;text-transform:uppercase;opacity:.7}
+.cg-sb p{font-size:13px;color:rgba(255,255,255,.5);line-height:1.65}
+.cg-box{margin-top:28px;background:rgba(147,197,253,.07);border:1px solid rgba(147,197,253,.15);padding:20px}
+.cg-box h4{font-family:var(--fm);font-size:9px;letter-spacing:3px;color:var(--sky);margin-bottom:12px;text-transform:uppercase;opacity:.7}
+.cg-box ul{padding-left:14px}
+.cg-box li{font-size:12px;color:rgba(255,255,255,.45);line-height:1.75;margin-bottom:4px}
 .cg-papers{display:flex;flex-direction:column;gap:14px}
-.cg-paper{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-left:3px solid var(--red);padding:18px}
-.cg-paper-lbl{font-family:var(--fm);font-size:9px;letter-spacing:3px;color:var(--red);margin-bottom:7px}
-.cg-paper h4{font-style:italic;font-size:14px;color:var(--white);line-height:1.4;margin-bottom:6px}
-.cg-paper-meta{font-family:var(--fm);font-size:9px;color:rgba(255,255,255,.35);margin-bottom:8px}
-.cg-paper p{font-size:12px;color:rgba(255,255,255,.5);line-height:1.65}
-.cases{padding:72px 0;border-bottom:2px solid var(--ink)}
-.case-item{border-top:1px solid var(--rule)}
-.case-hd{display:flex;justify-content:space-between;align-items:flex-start;padding:24px 0;cursor:pointer;gap:20px}
-.case-hd:hover .cn{color:var(--red)}
-.cm{display:flex;gap:20px;align-items:flex-start}
-.cn{font-family:var(--fh);font-size:48px;color:var(--rule);line-height:1;flex-shrink:0;transition:color .15s;width:56px}
-.case-hd h3{font-family:var(--fh);font-size:21px;letter-spacing:.5px;margin-bottom:4px}
-.case-ctx{font-family:var(--fm);font-size:10px;letter-spacing:1px;color:var(--muted)}
-.ct{font-size:22px;color:var(--red);flex-shrink:0;line-height:1;padding-top:4px;transition:transform .2s}
-.ct.open{transform:rotate(45deg)}
-.cb{display:none;background:var(--silver);border-left:4px solid var(--red);padding:24px 28px}
+.cg-paper{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-left:3px solid var(--sky);padding:18px;transition:background .15s}
+.cg-paper:hover{background:rgba(255,255,255,.07)}
+.cg-paper-lbl{font-family:var(--fm);font-size:9px;letter-spacing:3px;color:var(--sky);margin-bottom:8px;text-transform:uppercase;opacity:.6}
+.cg-paper h4{font-family:var(--fh);font-style:italic;font-size:14px;color:var(--white);line-height:1.4;margin-bottom:6px}
+.cg-paper-meta{font-family:var(--fm);font-size:9px;color:rgba(255,255,255,.28);margin-bottom:8px}
+.cg-paper p{font-size:12px;color:rgba(255,255,255,.45);line-height:1.65}
+
+/* CASE STUDIES */
+.cases{padding:80px 0;border-bottom:1px solid var(--rule)}
+.case-item{border:1px solid var(--rule);margin-bottom:12px;border-radius:2px;overflow:hidden}
+.case-hd{display:flex;justify-content:space-between;align-items:center;padding:22px 28px;cursor:pointer;gap:20px;transition:background .15s;background:var(--white)}
+.case-hd:hover{background:var(--offwhite)}
+.cm{display:flex;gap:18px;align-items:center}
+.cn{font-family:var(--fh);font-size:28px;color:var(--rule);line-height:1;flex-shrink:0;transition:color .15s;width:40px}
+.case-hd:hover .cn{color:var(--blue)}
+.case-hd h3{font-family:var(--fh);font-size:19px;margin-bottom:3px;line-height:1.2}
+.case-ctx{font-family:var(--fm);font-size:10px;letter-spacing:1px;color:var(--muted);text-transform:uppercase}
+.ct{width:28px;height:28px;border:1px solid var(--rule);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--blue);flex-shrink:0;transition:all .2s;font-weight:300}
+.ct.open{transform:rotate(45deg);background:var(--navy);color:var(--white);border-color:var(--navy)}
+.cb{display:none;border-top:1px solid var(--rule);background:var(--offwhite);padding:28px}
 .cb.open{display:block}
 .cg2{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.cbl h4{font-family:var(--fm);font-size:9px;letter-spacing:3px;color:var(--red);margin-bottom:8px}
-.cbl p,.cbl ul{font-size:13px;line-height:1.85;color:#3a4a5a}
-.cbl ul{padding-left:14px}
-.cbl li{margin-bottom:4px}
-.ctags{display:flex;flex-wrap:wrap;gap:5px;margin-top:16px;padding-top:14px;border-top:1px solid var(--rule)}
-.pubs{padding:72px 0;background:var(--silver);border-bottom:2px solid var(--ink)}
-.pub-list{border:1px solid var(--rule);background:var(--white)}
-.pub-item{display:grid;grid-template-columns:52px 1fr;gap:0 18px;padding:16px 20px;border-bottom:1px solid var(--rule);transition:background .1s}
+.cbl h4{font-family:var(--fm);font-size:9px;letter-spacing:3px;color:var(--blue);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--rule);text-transform:uppercase}
+.cbl p,.cbl ul{font-size:13px;line-height:1.85;color:#374151}
+.cbl ul{padding-left:16px}
+.cbl li{margin-bottom:5px}
+.ctags{display:flex;flex-wrap:wrap;gap:5px;margin-top:18px;padding-top:14px;border-top:1px solid var(--rule)}
+
+/* PUBLICATIONS */
+.pubs{padding:80px 0;background:var(--offwhite);border-bottom:1px solid var(--rule)}
+.pub-list{border:1px solid var(--rule);background:var(--white);border-radius:2px;overflow:hidden}
+.pub-item{display:grid;grid-template-columns:48px 1fr;gap:0 18px;padding:16px 20px;border-bottom:1px solid var(--rule);transition:background .1s}
 .pub-item:last-child{border-bottom:none}
-.pub-item:hover{background:#f9f9f9}
-.pub-yr{font-family:var(--fh);font-size:28px;color:var(--rule);line-height:1;padding-top:3px}
-.pub-meta{font-family:var(--fm);font-size:9px;letter-spacing:2px;color:var(--muted);margin-bottom:4px;display:flex;gap:7px;flex-wrap:wrap;align-items:center}
-.pub-title{font-style:italic;font-size:14px;line-height:1.5;margin-bottom:4px}
+.pub-item:hover{background:var(--offwhite)}
+.pub-yr{font-family:var(--fh);font-size:26px;color:var(--rule);line-height:1;padding-top:3px}
+.pub-meta{font-family:var(--fm);font-size:9px;letter-spacing:2px;color:var(--muted);margin-bottom:4px;display:flex;gap:7px;flex-wrap:wrap;align-items:center;text-transform:uppercase}
+.pub-title{font-family:var(--fh);font-style:italic;font-size:14px;line-height:1.5;margin-bottom:4px;color:var(--ink)}
 .pub-authors{font-family:var(--fm);font-size:10px;color:var(--muted);line-height:1.4}
-.pub-authors strong{color:var(--ink)}
-.pub-patent{background:#fffbf0}
+.pub-authors strong{color:var(--ink);font-weight:600}
+.pub-patent{background:#fffbeb}
 .pub-more{margin-top:20px}
-.tools{padding:72px 0;border-bottom:2px solid var(--ink)}
-.tools-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.tool-card{border:2px solid var(--ink);padding:26px;transition:all .15s}
-.tool-card:hover{box-shadow:5px 5px 0 var(--ink);transform:translate(-3px,-3px)}
-.tool-icon{font-family:var(--fh);font-size:28px;letter-spacing:1px;color:var(--red);margin-bottom:10px}
-.tool-card h3{font-family:var(--fh);font-size:18px;letter-spacing:.5px;margin-bottom:7px}
-.tool-card p{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:12px}
-.tool-link{font-family:var(--fm);font-size:10px;letter-spacing:1px;color:var(--navy);border-bottom:1px solid var(--navy)}
-.tool-mods{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px}
+
+/* TOOLS */
+.tools{padding:80px 0;border-bottom:1px solid var(--rule)}
+.tools-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tool-card{border:1px solid var(--rule);padding:28px;border-top:3px solid var(--navy);transition:all .15s;background:var(--white);border-radius:0 0 2px 2px}
+.tool-card:hover{box-shadow:0 8px 32px rgba(15,52,96,.08);transform:translateY(-3px);border-top-color:var(--blue)}
+.tool-icon{font-family:var(--fm);font-size:11px;letter-spacing:3px;color:var(--blue);margin-bottom:12px;font-weight:500;text-transform:uppercase}
+.tool-card h3{font-family:var(--fh);font-size:18px;margin-bottom:8px;line-height:1.2}
+.tool-card p{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:14px}
+.tool-link{font-family:var(--fm);font-size:10px;letter-spacing:.5px;color:var(--blue);border-bottom:1px solid var(--blue);padding-bottom:1px}
+.tool-mods{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:12px}
 .tool-mod{font-family:var(--fm);font-size:8px;padding:2px 7px;background:var(--silver);border:1px solid var(--rule);color:var(--muted)}
-.contact{padding:72px 0}
+
+/* CONTACT */
+.contact{padding:80px 0;background:var(--offwhite)}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}
-.contact-info h2{font-family:var(--fh);font-size:clamp(38px,5vw,58px);letter-spacing:1px;margin-bottom:18px;line-height:1}
-.contact-info>p{font-size:15px;line-height:1.85;color:#3a4a5a;margin-bottom:28px}
-.ci-row{display:flex;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid var(--rule);font-size:13px;color:#3a4a5a}
-.ci-row .ic{width:18px;flex-shrink:0;font-size:15px}
-.ci-row a:hover{color:var(--red)}
-.engage-box{background:var(--silver);border-left:4px solid var(--red);padding:20px;margin-top:24px}
-.engage-box h4{font-family:var(--fm);font-size:9px;letter-spacing:3px;color:var(--red);margin-bottom:10px}
+.contact-info h2{font-family:var(--fh);font-size:clamp(34px,4.5vw,52px);line-height:1.05;margin-bottom:16px;letter-spacing:-.3px}
+.contact-info>p{font-size:15px;line-height:1.85;color:#374151;margin-bottom:28px}
+.ci-row{display:flex;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid var(--rule);font-size:14px;color:#374151}
+.ci-row .ic{width:20px;flex-shrink:0;font-size:15px;color:var(--blue)}
+.ci-row a:hover{color:var(--blue)}
+.engage-box{background:var(--navy);padding:20px;margin-top:24px}
+.engage-box h4{font-family:var(--fm);font-size:9px;letter-spacing:3px;color:var(--sky);margin-bottom:12px;text-transform:uppercase;opacity:.7}
 .engage-box ul{padding-left:14px}
-.engage-box li{font-size:13px;color:#3a4a5a;line-height:1.75;margin-bottom:3px}
-.form-group{margin-bottom:14px}
-.form-group label{font-family:var(--fm);font-size:9px;letter-spacing:3px;color:var(--red);display:block;margin-bottom:5px}
-.form-group input,.form-group textarea,.form-group select{width:100%;border:1px solid var(--rule);padding:10px 13px;font-family:var(--fb);font-size:14px;outline:none;transition:border-color .15s;background:var(--white)}
-.form-group input:focus,.form-group textarea:focus{border-color:var(--ink)}
+.engage-box li{font-size:13px;color:rgba(255,255,255,.6);line-height:1.75;margin-bottom:4px}
+.engage-box li strong{color:var(--white)}
+.form-wrap{background:var(--white);border:1px solid var(--rule);padding:32px}
+.form-group{margin-bottom:16px}
+.form-group label{font-family:var(--fm);font-size:9px;letter-spacing:3px;color:var(--blue);display:block;margin-bottom:6px;text-transform:uppercase}
+.form-group input,.form-group textarea,.form-group select{width:100%;border:1px solid var(--rule);padding:10px 13px;font-family:var(--fb);font-size:14px;outline:none;transition:border-color .15s;background:var(--white);border-radius:2px}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--navy)}
 .form-group textarea{resize:vertical;min-height:90px}
-.form-submit{width:100%;padding:14px;background:var(--ink);color:var(--white);font-family:var(--fm);font-size:12px;letter-spacing:3px;border:none;cursor:pointer;transition:background .15s}
-.form-submit:hover{background:var(--red)}
-.footer{background:var(--ink);padding:18px 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
-.footer-name{font-family:var(--fh);font-size:15px;letter-spacing:2px;color:var(--white)}
-.footer-copy{font-family:var(--fm);font-size:10px;color:#3a4050}
-.footer-links{display:flex;gap:18px}
-.footer-links a{font-family:var(--fm);font-size:10px;letter-spacing:2px;color:#3a4050;transition:color .15s}
+.form-submit{width:100%;padding:13px;background:var(--navy);color:var(--white);font-family:var(--fb);font-size:13px;font-weight:600;letter-spacing:.5px;border:none;cursor:pointer;transition:background .15s;border-radius:2px}
+.form-submit:hover{background:var(--blue)}
+
+/* FOOTER */
+.footer{background:var(--ink);padding:20px 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.footer-brand{display:flex;align-items:center;gap:8px}
+.footer-dot{width:7px;height:7px;background:var(--blue);border-radius:50%}
+.footer-name{font-family:var(--fh);font-size:15px;color:var(--white);letter-spacing:.2px}
+.footer-copy{font-family:var(--fm);font-size:9px;color:#374151;letter-spacing:1px}
+.footer-links{display:flex;gap:16px}
+.footer-links a{font-family:var(--fm);font-size:10px;letter-spacing:2px;color:#374151;transition:color .15s;text-transform:uppercase}
 .footer-links a:hover{color:var(--white)}
+
 @media(max-width:960px){
   .hero-grid,.about-grid,.contact-grid,.cg-grid{grid-template-columns:1fr}
   .hero-right{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr)}
   .svc-grid,.tools-grid{grid-template-columns:1fr}
   .cg2{grid-template-columns:1fr}
   .nav-links{display:none}
-  .container{padding:0 20px}
+  .container,.nav-in{padding-left:20px;padding-right:20px}
   .hero-left{padding:48px 24px}
 }
 </style>
@@ -189,7 +223,10 @@ a{color:inherit;text-decoration:none}
 <!-- NAV -->
 <nav class="nav">
   <div class="nav-in">
-    <div class="nav-brand"><div class="nav-bar"></div><div class="nav-name">NISHIKANT WASE PhD</div></div>
+    <div class="nav-brand">
+      <div class="nav-dot"></div>
+      <div class="nav-name">Nishikant Wase, <span>PhD</span></div>
+    </div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
@@ -197,8 +234,7 @@ a{color:inherit;text-decoration:none}
       <li><a href="#cases">Case Studies</a></li>
       <li><a href="#pubs">Publications</a></li>
       <li><a href="#tools">Tools</a></li>
-      <li><a href="#contact">Get in Touch</a></li>
-      <li><a href="assets/cv/NW_CV_2025.pdf" class="nav-cta" download>CV &#8595;</a></li>
+      <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
     </ul>
   </div>
 </nav>
@@ -207,24 +243,23 @@ a{color:inherit;text-decoration:none}
 <section class="hero" id="hero">
   <div class="hero-grid">
     <div class="hero-left">
-      <p class="hero-eyebrow">DRUG DISCOVERY &middot; DMPK &middot; GxP BIOANALYSIS &middot; RICHMOND VA</p>
-      <h1 class="hero-position">
-        I SORT OUT THE<br>ANALYTICAL<br><em>PROBLEMS THAT</em><br>STALL DRUG<br>PROGRAMMES.
+      <p class="hero-eyebrow">Drug Discovery &nbsp;&middot;&nbsp; DMPK &nbsp;&middot;&nbsp; GxP Bioanalysis &nbsp;&middot;&nbsp; Richmond, VA</p>
+      <h1 class="hero-h">
+        I sort out the<br/>analytical
+        <em>problems that<br/>stall programmes.</em>
       </h1>
-      <p class="hero-sub">
-        14+ years spanning discovery-stage phenotypic HTS through GxP-regulated Phase III bioanalysis &mdash; the rather rare scientist who genuinely understands both ends of the drug development pipeline and is equally at home in either.
-      </p>
+      <p class="hero-sub">14+ years spanning discovery-stage phenotypic HTS through GxP-regulated Phase III bioanalysis &mdash; the rather rare scientist who genuinely understands both ends of the drug development pipeline and is equally at home in either.</p>
       <p class="hero-meta">PI across 16 regulated LC-MS programmes &nbsp;&middot;&nbsp; US Patent &nbsp;&middot;&nbsp; 28+ publications &nbsp;&middot;&nbsp; $725K leveraged grants</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-red">DISCUSS YOUR PROJECT</a>&nbsp;
-        <a href="#cases" class="btn btn-outline">SEE CASE STUDIES &rarr;</a>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-white">Discuss Your Project</a>
+        <a href="#cases" class="btn btn-ghost">See Case Studies &rarr;</a>
       </div>
     </div>
     <div class="hero-right">
-      <div class="stat-cell"><div class="stat-num">16</div><div class="stat-label">LC-MS PROGRAMMES AS PI</div></div>
-      <div class="stat-cell"><div class="stat-num">43K</div><div class="stat-label">COMPOUNDS SCREENED IN HTS</div></div>
-      <div class="stat-cell"><div class="stat-num">28+</div><div class="stat-label">PEER-REVIEWED PUBLICATIONS</div></div>
-      <div class="stat-cell"><div class="stat-num">14+</div><div class="stat-label">YEARS EXPERIENCE</div></div>
+      <div class="stat-cell"><div class="stat-n">16</div><div class="stat-l">Regulated LC-MS Programmes as PI</div></div>
+      <div class="stat-cell"><div class="stat-n">43K</div><div class="stat-l">Compounds Screened in HTS</div></div>
+      <div class="stat-cell"><div class="stat-n">28+</div><div class="stat-l">Peer-Reviewed Publications</div></div>
+      <div class="stat-cell"><div class="stat-n">14+</div><div class="stat-l">Years of Experience</div></div>
     </div>
   </div>
 </section>
@@ -232,33 +267,32 @@ a{color:inherit;text-decoration:none}
 <!-- ABOUT -->
 <section class="about" id="about">
   <div class="container">
-    <div class="label">ABOUT</div>
+    <div class="label">About</div>
     <div class="about-grid">
       <div class="about-text">
-        <h2 class="sec-title">EQUALLY AT HOME AT BOTH ENDS OF THE PIPELINE.</h2>
+        <h2 class="sec-title">Equally at home at both ends of the pipeline.</h2>
         <p style="margin-top:18px">Most analytical scientists plant their flag firmly on one side of a divide &mdash; either the intellectual freedom of early discovery, or the disciplined rigour of regulated development. I&rsquo;ve spent 14 years doing both, and I&rsquo;ve never quite managed to choose between them. That, as it turns out, is rather useful.</p>
         <p>My doctorate at the <strong>University of Sheffield</strong> trained me to think carefully, write precisely, and never present a result without understanding where it might go wrong &mdash; a habit that has served me well ever since. The postdoctoral years at the University of Nebraska produced what I&rsquo;d consider my most ambitious piece of work: a complete phenotypic drug discovery campaign from scratch &mdash; 43,783 compounds screened, 243 hits confirmed, mechanism deconvoluted by integrated multi-omics, and a <strong>US patent granted</strong>. Not bad for a plant biologist, all things considered.</p>
         <p>The move into industry brought a different kind of challenge. As Principal Investigator at Thermo Fisher Scientific (PPD), I now lead <strong>16 GxP-regulated LC-MS analytical programmes</strong> for five global clients, from preclinical candidate selection through Phase III. The science is different; the need to get it right first time is exactly the same.</p>
         <blockquote class="about-pull">&ldquo;The best analytical scientists I&rsquo;ve known could tell you not just what the data said, but what it meant for the programme. That&rsquo;s the kind of scientist I&rsquo;ve tried to be.&rdquo;</blockquote>
         <p>I&rsquo;m currently open to consulting engagements, advisory roles, and senior full-time positions. If you have a tricky analytical problem &mdash; whether it&rsquo;s a method that won&rsquo;t behave, a screen that needs designing properly, or a dataset that&rsquo;s produced a heatmap rather than an answer &mdash; I&rsquo;d be genuinely keen to hear about it.</p>
-        <p style="font-family:var(--fm);font-size:11px;letter-spacing:2px;color:var(--red);margin-top:20px">CURRENTLY ACCEPTING: CONSULTING &nbsp;&middot;&nbsp; ADVISORY BOARD &nbsp;&middot;&nbsp; SENIOR ROLES</p>
+        <div class="about-status">Currently accepting: Consulting &nbsp;&middot;&nbsp; Advisory Board &nbsp;&middot;&nbsp; Senior Roles</div>
       </div>
       <div>
-        <div class="sidebar-card">
-          <h3>CURRENT POSITION</h3>
+        <div class="scard">
+          <h3>Current Position</h3>
           <p><strong>R&amp;D Scientist / PI, Bioanalysis</strong><br>Thermo Fisher Scientific / PPD<br><em>Nov 2022 &ndash; Present &middot; Richmond, VA</em></p>
         </div>
-        <div class="sidebar-card">
-          <h3>EDUCATION</h3>
-          <p><strong>PhD, Chemical &amp; Biological Engineering</strong><br>University of Sheffield, UK<br><em>2006&ndash;2010</em></p>
-          <p style="margin-top:8px"><strong>MSc, Botany</strong><br>Nagpur University, India</p>
+        <div class="scard">
+          <h3>Education</h3>
+          <p><strong>PhD, Chemical &amp; Biological Engineering</strong><br>University of Sheffield, UK &middot; 2006&ndash;2010<br><br><strong>MSc, Botany</strong><br>Nagpur University, India</p>
         </div>
-        <div class="sidebar-card">
-          <h3>CREDENTIALS AT A GLANCE</h3>
+        <div class="scard">
+          <h3>Credentials</h3>
           <p>National Overseas Fellow (Govt. of India)<br>NSF-EPSCoR Principal Investigator<br>US Patent 10351883<br>ORCID: 0000-0002-8955-3300</p>
         </div>
-        <div class="sidebar-card">
-          <h3>FIND ME</h3>
+        <div class="scard">
+          <h3>Find Me</h3>
           <div class="links-row">
             <a href="https://www.linkedin.com/in/nwase" target="_blank" rel="noopener">LinkedIn</a>
             <a href="https://scholar.google.com/citations?user=Y1WeytUAAAAJ" target="_blank" rel="noopener">Scholar</a>
@@ -274,29 +308,29 @@ a{color:inherit;text-decoration:none}
 <!-- SERVICES -->
 <section class="services" id="services">
   <div class="container">
-    <div class="label">HOW I CAN HELP</div>
-    <h2 class="sec-title">THREE THINGS I DO<br>RATHER WELL</h2>
+    <div class="label">How I Can Help</div>
+    <h2 class="sec-title">Three things I do rather well</h2>
     <p class="sec-sub">Not a list of techniques. A list of problems I&rsquo;ve spent years learning to solve properly.</p>
     <div class="svc-grid">
 
       <div class="svc-card">
-        <div class="svc-num">01</div>
-        <div class="svc-title">LC-MS BIOANALYSIS &amp; DMPK METHOD DEVELOPMENT</div>
-        <div class="svc-divider"></div>
+        <div class="svc-num">01 &mdash; LC-MS &amp; DMPK</div>
+        <div class="svc-title">Method Development &amp; Validation</div>
+        <div class="svc-div"></div>
         <p class="svc-body">Your method isn&rsquo;t behaving, your timeline is slipping, or your team simply hasn&rsquo;t got the LC-MS expertise to get a GxP-compliant package across the line. I&rsquo;ve led 16 programmes covering ADCs, large molecules, and small molecule DMPK. I know precisely where these projects tend to come unstuck &mdash; and how to get them moving again.</p>
         <ul class="svc-list">
           <li>ADC characterisation (peptide mapping, DAR, HCP)</li>
           <li>DMPK/ADMET method development &amp; MetID</li>
-          <li>GxP/GLP method validation (ICH Q2, Q6B, M10)</li>
+          <li>GxP/GLP validation aligned with ICH Q2, Q6B, M10</li>
           <li>Analytical strategy for IND/BLA submissions</li>
-          <li>Platforms: Orbitrap Exploris, Sciex 7500/6500, Altis+</li>
+          <li>Orbitrap Exploris, Sciex 7500/6500, Altis+</li>
         </ul>
       </div>
 
       <div class="svc-card">
-        <div class="svc-num">02</div>
-        <div class="svc-title">PHENOTYPIC DRUG DISCOVERY &amp; HTS DESIGN</div>
-        <div class="svc-divider"></div>
+        <div class="svc-num">02 &mdash; HTS DESIGN</div>
+        <div class="svc-title">Phenotypic Drug Discovery</div>
+        <div class="svc-div"></div>
         <p class="svc-body">You need a phenotypic screen designed and validated properly, or you&rsquo;ve got hits and need someone who can run the full cascade without cutting corners &mdash; dose-response, cheminformatics SAR, and a multi-omics mechanism package that actually holds up to scrutiny. I&rsquo;ve done this end-to-end at proper scale: 43K compounds, Z&prime;&thinsp;=&thinsp;0.78, patent granted.</p>
         <ul class="svc-list">
           <li>Phenotypic assay design &amp; Z&prime; validation (96-/384-well)</li>
@@ -308,10 +342,10 @@ a{color:inherit;text-decoration:none}
       </div>
 
       <div class="svc-card">
-        <div class="svc-num">03</div>
-        <div class="svc-title">MULTI-OMICS STUDY DESIGN &amp; DATA SCIENCE</div>
-        <div class="svc-divider"></div>
-        <p class="svc-body">Your team ran the experiment. The data came back. And now everyone&rsquo;s staring at a heatmap wondering what to tell the programme team. I design multi-omics studies that are built around a specific mechanistic question from day one, and I build R-based pipelines that produce interpretable results rather than impressive-looking ones. Supported 50+ programmes at UVA. Built a 500-compound MS/MS library deposited to MassBank.</p>
+        <div class="svc-num">03 &mdash; MULTI-OMICS</div>
+        <div class="svc-title">Study Design &amp; Data Science</div>
+        <div class="svc-div"></div>
+        <p class="svc-body">Your team ran the experiment. The data came back. And now everyone&rsquo;s staring at a heatmap wondering what to tell the programme team. I design multi-omics studies that are built around a specific mechanistic question from day one, and I build R-based pipelines that produce interpretable results rather than impressive-looking ones.</p>
         <ul class="svc-list">
           <li>Untargeted metabolomics &amp; lipidomics study design</li>
           <li>Proteomics (DDA/DIA/TMT) integration with metabolomics</li>
@@ -330,50 +364,50 @@ a{color:inherit;text-decoration:none}
   <div class="container">
     <div class="cg-grid">
       <div>
-        <div class="label">SIGNATURE WORK</div>
-        <h2 class="cg-title">A COMPLETE DRUG DISCOVERY CAMPAIGN. PUBLISHED IN A PLANT JOURNAL.</h2>
-        <p class="cg-intro">Two <em>Plant Physiology</em> papers document what is, in terms of mechanistic scope and experimental rigour, a full pharma-equivalent phenotypic drug discovery campaign &mdash; from first-principles HTS platform design through cheminformatics-driven SAR, integrated multi-omics mechanism of action, and a granted US patent. The biological context is algae. The workflow is, to put it plainly, indistinguishable from a modern pharmaceutical programme. Draw your own conclusions about why it ended up in a plant biology journal.</p>
+        <div class="label">Signature Work</div>
+        <h2 class="cg-title">A complete drug discovery campaign. Published in a plant journal.</h2>
+        <p class="cg-intro">Two <em>Plant Physiology</em> papers document what is, in terms of mechanistic scope and experimental rigour, a full pharma-equivalent phenotypic drug discovery campaign &mdash; from first-principles HTS platform design through cheminformatics-driven SAR, integrated multi-omics mechanism of action, and a granted US patent. The biological context is algae. The workflow is, to put it plainly, indistinguishable from a modern pharmaceutical programme.</p>
         <div style="margin-bottom:24px">
-          <div class="cg-step"><div class="cg-sn">01</div><div class="cg-sb"><h4>HTS PLATFORM DESIGN</h4><p>Nile Red/OD dual-readout assay built from scratch and properly validated &mdash; Z&prime;&thinsp;=&thinsp;0.68 in a 1,717-compound NCI pilot, then scaled to a 43,783-compound full campaign at Z&prime;&thinsp;=&thinsp;0.78 across 124 &times; 384-well plates. Classified &ldquo;excellent assay&rdquo; at pilot stage.</p></div></div>
-          <div class="cg-step"><div class="cg-sn">02</div><div class="cg-sb"><h4>HIT VALIDATION &amp; DOSE-RESPONSE</h4><p>243 confirmed hits across 5 structural scaffolds. 4PL/Hill equation in R, EC&#8325;&#8320;/therapeutic index ranking. Brefeldin A confirmed at EC&#8325;&#8320;&thinsp;=&thinsp;2.59&thinsp;&micro;M. Orthogonal validation: GC-MS FAME, HPTLC, confocal microscopy, western blot (DGAT2A). No short cuts.</p></div></div>
-          <div class="cg-step"><div class="cg-sn">03</div><div class="cg-sb"><h4>SAR BY CHEMINFORMATICS</h4><p>ChemMine Tanimoto clustering, Cytoscape ChemViz, ChemAxon in TIBCO Spotfire. Structural determinants of selective lipid induction vs. cytotoxic liability &mdash; a proper MPO lead optimisation analysis in all but name.</p></div></div>
-          <div class="cg-step"><div class="cg-sn">04</div><div class="cg-sb"><h4>MULTI-OMICS MoA DECONVOLUTION</h4><p>TMT proteomics (884 proteins) + RNA-seq (15,965 genes) + LC-MS metabolomics (11,752 features), integrated into a single mechanistic study. Target axis: ACLY &rarr; citrate flux &rarr; DGAT2 &rarr; ARF1/Golgi trafficking. No ER stress, no lipotoxicity, no hand-waving.</p></div></div>
+          <div class="cg-step"><div class="cg-sn">01</div><div class="cg-sb"><h4>HTS Platform Design</h4><p>Nile Red/OD dual-readout assay built from scratch and properly validated &mdash; Z&prime;&thinsp;=&thinsp;0.68 in 1,717-compound NCI pilot, scaled to 43,783-compound full campaign at Z&prime;&thinsp;=&thinsp;0.78 across 124 &times; 384-well plates.</p></div></div>
+          <div class="cg-step"><div class="cg-sn">02</div><div class="cg-sb"><h4>Hit Validation &amp; Dose-Response</h4><p>243 confirmed hits across 5 structural scaffolds. 4PL/Hill in R, EC&#8325;&#8320;/therapeutic index ranking. Brefeldin A at EC&#8325;&#8320;&thinsp;=&thinsp;2.59&thinsp;&micro;M. Orthogonal validation: GC-MS FAME, HPTLC, confocal microscopy, western blot. No short cuts.</p></div></div>
+          <div class="cg-step"><div class="cg-sn">03</div><div class="cg-sb"><h4>SAR by Cheminformatics</h4><p>ChemMine Tanimoto clustering, Cytoscape ChemViz, ChemAxon in TIBCO Spotfire. Structural determinants of selective lipid induction vs. cytotoxic liability &mdash; a proper MPO lead optimisation analysis in all but name.</p></div></div>
+          <div class="cg-step"><div class="cg-sn">04</div><div class="cg-sb"><h4>Multi-Omics MoA Deconvolution</h4><p>TMT proteomics (884 proteins) + RNA-seq (15,965 genes) + LC-MS metabolomics (11,752 features). Target axis: ACLY &rarr; citrate flux &rarr; DGAT2 &rarr; ARF1/Golgi trafficking. No ER stress, no lipotoxicity, no hand-waving.</p></div></div>
         </div>
-        <div class="cg-translate">
-          <h4>WHY THIS IS RELEVANT TO YOUR PROGRAMME</h4>
+        <div class="cg-box">
+          <h4>Why This Is Relevant to Your Programme</h4>
           <ul>
-            <li><strong>ACLY</strong> &mdash; validated NASH/obesity target; bempedoic acid mechanism</li>
-            <li><strong>DGAT1/2</strong> &mdash; active drug discovery targets; DGAT2 inhibitors in Phase II/III</li>
-            <li><strong>ARF1/vesicular trafficking</strong> &mdash; emerging target class in lipid storage disorders and metabolic oncology</li>
-            <li>The workflow is <strong>structurally identical</strong> to pharmaceutical phenotypic drug discovery &mdash; full stop</li>
+            <li><strong style="color:rgba(255,255,255,.75)">ACLY</strong> &mdash; validated NASH/obesity target; bempedoic acid mechanism</li>
+            <li><strong style="color:rgba(255,255,255,.75)">DGAT1/2</strong> &mdash; active drug discovery targets; DGAT2 inhibitors in Phase II/III</li>
+            <li><strong style="color:rgba(255,255,255,.75)">ARF1/vesicular trafficking</strong> &mdash; emerging target in lipid storage disorders and metabolic oncology</li>
+            <li>The workflow is <strong style="color:rgba(255,255,255,.75)">structurally identical</strong> to pharmaceutical phenotypic drug discovery &mdash; full stop</li>
           </ul>
         </div>
       </div>
       <div>
         <div class="cg-papers">
           <div class="cg-paper">
-            <div class="cg-paper-lbl">PLANT PHYSIOLOGY &middot; 2017 &middot; HIGHLY ACCESSED</div>
+            <div class="cg-paper-lbl">Plant Physiology &middot; 2017 &middot; Highly Accessed</div>
             <h4>Identification and Metabolite Profiling of Chemical Activators of Lipid Accumulation in Green Algae</h4>
             <div class="cg-paper-meta">Wase N et al. &middot; Plant Physiol. 174(4):2146&ndash;2165 &middot; PMID: 28652262 &middot; PubChem AIDs 1159536/1159537</div>
-            <p>The full HTS paper. 43K compounds, 243 confirmed hits, complete dose-response cascade, metabolite profiling of active scaffolds. The methodology section is, in effect, a transferable HTS SOP for lipid metabolism targets.</p>
+            <p>The full HTS paper. 43K compounds, 243 confirmed hits, complete dose-response cascade. The methodology section is effectively a transferable HTS SOP for lipid metabolism targets.</p>
           </div>
           <div class="cg-paper">
-            <div class="cg-paper-lbl">PLANT PHYSIOLOGY &middot; 2019 &middot; MULTI-OMICS MoA</div>
+            <div class="cg-paper-lbl">Plant Physiology &middot; 2019 &middot; Multi-Omics MoA</div>
             <h4>Remodeling of Chlamydomonas Metabolism Using Synthetic Inducers Results in Lipid Storage During Growth</h4>
             <div class="cg-paper-meta">Wase N et al. &middot; Plant Physiol. 181(3):1029&ndash;1049</div>
-            <p>The mechanistic package. Integrated TMT proteomics, transcriptomics, and metabolomics mapping the ACLY/DGAT axis with the rigour of an IND-enabling candidate characterisation dossier.</p>
+            <p>The mechanistic package. TMT proteomics, transcriptomics, and metabolomics integrated to map the ACLY/DGAT axis with the rigour of an IND-enabling candidate characterisation dossier.</p>
           </div>
-          <div class="cg-paper" style="border-left-color:rgba(245,200,66,.6)">
-            <div class="cg-paper-lbl" style="color:#f5c842">US PATENT &middot; GRANTED JULY 2019</div>
+          <div class="cg-paper" style="border-left-color:rgba(253,230,138,.5)">
+            <div class="cg-paper-lbl" style="color:rgba(253,230,138,.6)">US Patent &middot; Granted July 2019</div>
             <h4>US Patent 10351883 / US20200071735A1 &mdash; Compounds for Increasing Lipid Synthesis and Storage</h4>
             <div class="cg-paper-meta">DiRusso C, Wase N &middot; Filed April 25, 2016 &middot; App. No. 15/138066</div>
-            <p>The translational endpoint. Scaffolds covering piperazines, adamantanes, and piperidines validated as lipid synthesis modulators &mdash; applicable to NASH and lipid storage disorder programmes.</p>
+            <p>The translational endpoint. Scaffolds covering piperazines, adamantanes, and piperidines &mdash; applicable to NASH and lipid storage disorder programmes.</p>
           </div>
-          <div class="cg-paper" style="border-left-color:rgba(100,200,100,.4)">
-            <div class="cg-paper-lbl" style="color:rgba(100,200,100,.8)">GRANTS GENERATED FROM THIS WORK</div>
-            <h4>$725,000 in external funding &mdash; NSF-EPSCoR + Nebraska Energy Sciences</h4>
+          <div class="cg-paper" style="border-left-color:rgba(134,239,172,.4)">
+            <div class="cg-paper-lbl" style="color:rgba(134,239,172,.6)">Grants Generated</div>
+            <h4>$725,000 in external funding from this work</h4>
             <div class="cg-paper-meta">NSF-EPSCoR $550K (2014&ndash;2018) &middot; Nebraska Energy Sciences $175K (2012&ndash;2014)</div>
-            <p>It is rather reassuring when external reviewers agree the science is fundable. Two independent grants said so.</p>
+            <p>It is rather reassuring when external reviewers agree the science is fundable. Two independent grant panels said so.</p>
           </div>
         </div>
       </div>
@@ -384,35 +418,41 @@ a{color:inherit;text-decoration:none}
 <!-- CASE STUDIES -->
 <section class="cases" id="cases">
   <div class="container">
-    <div class="label">CASE STUDIES</div>
-    <h2 class="sec-title">WHAT ACTUALLY HAPPENED,<br>NOT WHAT LOOKED GOOD ON PAPER</h2>
-    <p class="sec-sub">Three projects. What the brief was, what I did, and what the client walked away with.</p>
+    <div class="label">Case Studies</div>
+    <h2 class="sec-title">What actually happened,<br/>not what looked good on paper</h2>
+    <p class="sec-sub">Three projects &mdash; what the brief was, what I did, and what the client walked away with.</p>
 
     <div class="case-item">
       <div class="case-hd" onclick="tc('cs1')">
-        <div class="cm"><span class="cn" id="cs1-n">01</span><div><h3>ADC &amp; Large Molecule Bioanalysis Pipeline</h3><p class="case-ctx">Thermo Fisher / PPD &middot; 2022&ndash;Present &middot; 16 programmes, 5 global clients &middot; preclinical &rarr; Phase III</p></div></div>
+        <div class="cm">
+          <span class="cn" id="cs1-n">01</span>
+          <div><h3>ADC &amp; Large Molecule Bioanalysis Pipeline</h3><p class="case-ctx">Thermo Fisher / PPD &middot; 2022&ndash;Present &middot; 16 programmes, 5 global clients &middot; Preclinical &rarr; Phase III</p></div>
+        </div>
         <span class="ct" id="cs1-t">+</span>
       </div>
       <div class="cb" id="cs1-b">
         <div class="cg2">
-          <div class="cbl"><h4>THE BRIEF</h4><p>Five global biopharmaceutical clients needed GxP-compliant LC-MS/MS analytical packages for ADCs, biotherapeutics, and peptide drugs at various stages of development &mdash; tight timelines, regulatory scrutiny throughout, and absolutely no room for error.</p></div>
-          <div class="cbl"><h4>WHAT I DID</h4><ul><li>PI across 16 programmes &mdash; intact protein, peptide mapping, HCP, ADC characterisation on Orbitrap Exploris 240/480 and Sciex Altis+</li><li>GLP/GxP strategies aligned with ICH Q2, Q6B, and M10; full regulatory documentation to submission standard</li><li>Implemented Hamilton Nimbus automation and R-based reporting pipelines to improve throughput</li><li>Developed ADC Peptide Mapper (R-Shiny) for MRM transition generation and direct instrument export</li></ul></div>
-          <div class="cbl"><h4>WHAT THE CLIENT GOT</h4><ul><li>GxP-compliant analytical packages supporting IND and BLA submissions</li><li>Zero audit findings across all 16 programmes</li><li>Methods successfully transferred to client laboratories on three continents</li><li>~40% reduction in report review time through automated pipelines</li></ul></div>
+          <div class="cbl"><h4>The Brief</h4><p>Five global biopharmaceutical clients needed GxP-compliant LC-MS/MS analytical packages for ADCs, biotherapeutics, and peptide drugs at various stages of development &mdash; tight timelines, regulatory scrutiny throughout, and absolutely no room for error.</p></div>
+          <div class="cbl"><h4>What I Did</h4><ul><li>PI across 16 programmes &mdash; intact protein, peptide mapping, HCP, ADC characterisation on Orbitrap Exploris 240/480 and Sciex Altis+</li><li>GLP/GxP strategies aligned with ICH Q2, Q6B, M10; full regulatory documentation to submission standard</li><li>Implemented Hamilton Nimbus automation and R-based reporting pipelines</li><li>Developed ADC Peptide Mapper (R-Shiny) for MRM transition export to Thermo/Sciex</li></ul></div>
+          <div class="cbl"><h4>What the Client Got</h4><ul><li>GxP-compliant analytical packages supporting IND and BLA submissions</li><li>Zero audit findings across all 16 programmes</li><li>Methods transferred to client laboratories on three continents</li><li>~40% reduction in report review time through automated pipelines</li></ul></div>
         </div>
-        <div class="ctags"><span class="tag">ADC Characterisation</span><span class="tag">GxP/GLP</span><span class="tag">Orbitrap Exploris</span><span class="tag">ICH M10</span><span class="tag">CMC</span></div>
+        <div class="ctags"><span class="tag">ADC Characterisation</span><span class="tag">GxP / GLP</span><span class="tag">Orbitrap Exploris</span><span class="tag">ICH M10</span><span class="tag">CMC</span></div>
       </div>
     </div>
 
     <div class="case-item">
       <div class="case-hd" onclick="tc('cs2')">
-        <div class="cm"><span class="cn" id="cs2-n">02</span><div><h3>43K-Compound Phenotypic HTS &mdash; From Pilot to Patent</h3><p class="case-ctx">Univ. of Nebraska&ndash;Lincoln &middot; 2011&ndash;2019 &middot; US Patent 10351883 &middot; $725K in grants</p></div></div>
+        <div class="cm">
+          <span class="cn" id="cs2-n">02</span>
+          <div><h3>43K-Compound Phenotypic HTS &mdash; From Pilot to Patent</h3><p class="case-ctx">Univ. of Nebraska&ndash;Lincoln &middot; 2011&ndash;2019 &middot; US Patent 10351883 &middot; $725K in grants</p></div>
+        </div>
         <span class="ct" id="cs2-t">+</span>
       </div>
       <div class="cb" id="cs2-b">
         <div class="cg2">
-          <div class="cbl"><h4>THE BRIEF</h4><p>Identify small molecules capable of enhancing lipid metabolism during active cell growth &mdash; a bottleneck for biofuel production and a direct model for human lipid storage disorders including NASH. No validated assay platform existed. Budget was modest. The science had to be done properly regardless.</p></div>
-          <div class="cbl"><h4>WHAT I DID</h4><ul><li>Designed and validated a Nile Red/OD phenotypic assay from scratch; pilot screen classified &ldquo;excellent assay&rdquo; at Z&prime;&thinsp;=&thinsp;0.68, full campaign at Z&prime;&thinsp;=&thinsp;0.78 (43K compounds, 124 &times; 384-well)</li><li>243 confirmed hits across 5 structural scaffolds; 4PL dose-response, Tanimoto-based SAR, MPO ranking in R</li><li>Integrated TMT proteomics, RNA-seq, and metabolomics to identify the ACLY/DGAT/ARF1 mechanistic axis</li></ul></div>
-          <div class="cbl"><h4>WHAT THE CLIENT GOT</h4><ul><li>US Patent 10351883 &mdash; granted July 2019, commercially relevant scaffolds</li><li>$725,000 in external grant funding from two independent sources</li><li>5 peer-reviewed publications, including two Plant Physiology Highly Accessed papers</li><li>Full primary and confirmatory dataset archived in PubChem BioAssay (AIDs 1159536/1159537)</li></ul></div>
+          <div class="cbl"><h4>The Brief</h4><p>Identify small molecules capable of enhancing lipid metabolism during active cell growth &mdash; a bottleneck for biofuel production and a direct model for human lipid storage disorders including NASH. No validated assay platform existed. The science had to be done properly regardless.</p></div>
+          <div class="cbl"><h4>What I Did</h4><ul><li>Designed and validated Nile Red/OD assay from scratch; Z&prime;&thinsp;=&thinsp;0.68 at pilot (classified &ldquo;excellent&rdquo;), scaled to Z&prime;&thinsp;=&thinsp;0.78 at full campaign (43K, 124 &times; 384-well)</li><li>243 confirmed hits across 5 scaffolds; 4PL dose-response, Tanimoto SAR, MPO ranking in R</li><li>Integrated TMT proteomics, RNA-seq, and metabolomics to map the ACLY/DGAT/ARF1 axis</li></ul></div>
+          <div class="cbl"><h4>What the Client Got</h4><ul><li>US Patent 10351883 &mdash; granted July 2019, commercially relevant scaffolds</li><li>$725,000 in external grant funding from two independent sources</li><li>5 peer-reviewed publications including two Plant Physiology Highly Accessed papers</li><li>Full dataset archived in PubChem BioAssay (AIDs 1159536/1159537)</li></ul></div>
         </div>
         <div class="ctags"><span class="tag">Phenotypic HTS</span><span class="tag">SAR / Cheminformatics</span><span class="tag">Multi-Omics MoA</span><span class="tag">US Patent</span></div>
       </div>
@@ -420,68 +460,70 @@ a{color:inherit;text-decoration:none}
 
     <div class="case-item">
       <div class="case-hd" onclick="tc('cs3')">
-        <div class="cm"><span class="cn" id="cs3-n">03</span><div><h3>Metabolomics Core &mdash; Built and Scaled in 24 Months</h3><p class="case-ctx">University of Virginia, School of Medicine &middot; 2020&ndash;2022 &middot; 50+ programmes</p></div></div>
+        <div class="cm">
+          <span class="cn" id="cs3-n">03</span>
+          <div><h3>Metabolomics Core &mdash; Built and Scaled in 24 Months</h3><p class="case-ctx">University of Virginia, School of Medicine &middot; 2020&ndash;2022 &middot; 50+ programmes</p></div>
+        </div>
         <span class="ct" id="cs3-t">+</span>
       </div>
       <div class="cb" id="cs3-b">
         <div class="cg2">
-          <div class="cbl"><h4>THE BRIEF</h4><p>Build a fully operational metabolomics and lipidomics analytical core for UVA School of Medicine &mdash; supporting research programmes spanning metabolic disease, infectious disease, and microbiome science &mdash; from a standing start, with no existing platform, SOPs, or reference materials.</p></div>
-          <div class="cbl"><h4>WHAT I DID</h4><ul><li>Implemented and validated LC-MS/MS, GC-MS, and lipidomics workflows from scratch with full SOP documentation</li><li>Built a 500-compound metabolite reference library; deposited 1,610 MS/MS spectra to MassBank of North America (BAFUVAPOS series)</li><li>Developed R-based bioinformatics pipelines for PCA/PLS-DA, pathway enrichment, and multi-omics data integration</li><li>Led analytical harmonisation across partner institutions in the Trans-University Microbiome Initiative (TUMI)</li></ul></div>
-          <div class="cbl"><h4>WHAT THE CLIENT GOT</h4><ul><li>50+ active research programmes supported within 24 months of launch</li><li>A publicly available 1,610-spectra MS/MS reference library, freely accessible via MassBank</li><li>Contributions to publications in Nature Metabolism, mSystems, Metabolomics, and Liver International</li></ul></div>
+          <div class="cbl"><h4>The Brief</h4><p>Build a fully operational metabolomics and lipidomics analytical core for UVA School of Medicine from a standing start &mdash; no existing platform, SOPs, or reference materials &mdash; supporting programmes across metabolic disease, infectious disease, and microbiome science.</p></div>
+          <div class="cbl"><h4>What I Did</h4><ul><li>Implemented and validated LC-MS/MS, GC-MS, and lipidomics workflows from scratch with full SOP documentation</li><li>Built a 500-compound metabolite reference library; deposited 1,610 MS/MS spectra to MassBank of North America</li><li>Developed R-based bioinformatics pipelines for PCA/PLS-DA, pathway enrichment, and multi-omics integration</li><li>Led analytical harmonisation across TUMI partner institutions</li></ul></div>
+          <div class="cbl"><h4>What the Client Got</h4><ul><li>50+ active research programmes supported within 24 months of launch</li><li>Publicly available 1,610-spectra MS/MS reference library via MassBank</li><li>Publications in Nature Metabolism, mSystems, Metabolomics, and Liver International</li></ul></div>
         </div>
         <div class="ctags"><span class="tag">Metabolomics Core</span><span class="tag">Lipidomics</span><span class="tag">MassBank</span><span class="tag">TUMI</span></div>
       </div>
     </div>
-    <hr style="border:none;border-top:2px solid var(--ink);margin-top:0"/>
   </div>
 </section>
 
 <!-- PUBLICATIONS -->
 <section class="pubs" id="pubs">
   <div class="container">
-    <div class="label">SELECTED PUBLICATIONS</div>
-    <h2 class="sec-title">28+ PAPERS. FOUR JOURNALS<br>YOU&rsquo;LL RECOGNISE STRAIGHTAWAY.</h2>
-    <p class="sec-sub">A representative selection. Full list on <a href="https://scholar.google.com/citations?user=Y1WeytUAAAAJ" target="_blank" style="color:var(--red);border-bottom:1px solid">Google Scholar</a> &nbsp;&middot;&nbsp; ORCID: 0000-0002-8955-3300</p>
+    <div class="label">Selected Publications</div>
+    <h2 class="sec-title">28+ papers. Four journals<br/>you&rsquo;ll recognise straightaway.</h2>
+    <p class="sec-sub">A representative selection. Full list on <a href="https://scholar.google.com/citations?user=Y1WeytUAAAAJ" target="_blank" style="color:var(--blue);border-bottom:1px solid var(--blue)">Google Scholar</a> &nbsp;&middot;&nbsp; ORCID: 0000-0002-8955-3300</p>
     <div class="pub-list">
-      <div class="pub-item"><div class="pub-yr">2026</div><div><div class="pub-meta"><span>Science Advances</span><span class="badge badge-s">SCIENCE</span></div><p class="pub-title">Ampk alpha2 T172 activation dictates exercise performance and energy transduction in skeletal muscle</p><p class="pub-authors">Montalvo RN, Li X, <strong>Wase N</strong> et al. &nbsp;<em>Sci. Adv.</em> 12(9):eaeb3338</p></div></div>
-      <div class="pub-item"><div class="pub-yr">2023</div><div><div class="pub-meta"><span>Nature Metabolism</span><span class="badge badge-n">NATURE</span></div><p class="pub-title">Phagocytosis in the retina promotes local insulin production in the eye</p><p class="pub-authors">Iker Etchegaray J, Kelley S, &hellip;, <strong>Wase N</strong> et al. &nbsp;<em>Nat. Metab.</em> 5(2):207&ndash;218</p></div></div>
-      <div class="pub-item"><div class="pub-yr">2022</div><div><div class="pub-meta"><span>Nature Communications</span><span class="badge badge-n">NATURE</span></div><p class="pub-title">Genome of Paspalum vaginatum and the role of trehalose mediated autophagy in increasing maize biomass</p><p class="pub-authors">Sun G, <strong>Wase N</strong>, Shu S et al. &nbsp;<em>Nat. Commun.</em> 13(1):7731</p></div></div>
-      <div class="pub-item"><div class="pub-yr">2019</div><div><div class="pub-meta"><span>Plant Physiology</span><span class="badge badge-pp">&#9733; MULTI-OMICS MoA</span></div><p class="pub-title">Remodeling of Chlamydomonas metabolism using synthetic inducers results in lipid storage during growth</p><p class="pub-authors"><strong>Wase N</strong>, Tu B, Rasineni GK et al. &nbsp;<em>Plant Physiol.</em> 181(3):1029&ndash;1049</p></div></div>
-      <div class="pub-item"><div class="pub-yr">2017</div><div><div class="pub-meta"><span>Plant Physiology</span><span class="badge badge-ha">HIGHLY ACCESSED</span><span class="badge badge-pp">&#9733; FULL HTS CAMPAIGN</span></div><p class="pub-title">Identification and metabolite profiling of chemical activators of lipid accumulation in green algae</p><p class="pub-authors"><strong>Wase N</strong>, Tu B, Allen JW, Black PN, DiRusso CC &nbsp;<em>Plant Physiol.</em> 174(4):2146&ndash;2165 &nbsp;PMID: 28652262</p></div></div>
+      <div class="pub-item"><div class="pub-yr">2026</div><div><div class="pub-meta"><span>Science Advances</span><span class="badge badge-s">Science</span></div><p class="pub-title">Ampk alpha2 T172 activation dictates exercise performance and energy transduction in skeletal muscle</p><p class="pub-authors">Montalvo RN, Li X, <strong>Wase N</strong> et al. &nbsp;<em>Sci. Adv.</em> 12(9):eaeb3338</p></div></div>
+      <div class="pub-item"><div class="pub-yr">2023</div><div><div class="pub-meta"><span>Nature Metabolism</span><span class="badge badge-n">Nature</span></div><p class="pub-title">Phagocytosis in the retina promotes local insulin production in the eye</p><p class="pub-authors">Iker Etchegaray J, Kelley S, &hellip;, <strong>Wase N</strong> et al. &nbsp;<em>Nat. Metab.</em> 5(2):207&ndash;218</p></div></div>
+      <div class="pub-item"><div class="pub-yr">2022</div><div><div class="pub-meta"><span>Nature Communications</span><span class="badge badge-n">Nature</span></div><p class="pub-title">Genome of Paspalum vaginatum and the role of trehalose mediated autophagy in increasing maize biomass</p><p class="pub-authors">Sun G, <strong>Wase N</strong>, Shu S et al. &nbsp;<em>Nat. Commun.</em> 13(1):7731</p></div></div>
+      <div class="pub-item"><div class="pub-yr">2019</div><div><div class="pub-meta"><span>Plant Physiology</span><span class="badge badge-pp">&#9733; Multi-Omics MoA</span></div><p class="pub-title">Remodeling of Chlamydomonas metabolism using synthetic inducers results in lipid storage during growth</p><p class="pub-authors"><strong>Wase N</strong>, Tu B, Rasineni GK et al. &nbsp;<em>Plant Physiol.</em> 181(3):1029&ndash;1049</p></div></div>
+      <div class="pub-item"><div class="pub-yr">2017</div><div><div class="pub-meta"><span>Plant Physiology</span><span class="badge badge-ha">Highly Accessed</span><span class="badge badge-pp">&#9733; Full HTS Campaign</span></div><p class="pub-title">Identification and metabolite profiling of chemical activators of lipid accumulation in green algae</p><p class="pub-authors"><strong>Wase N</strong>, Tu B, Allen JW, Black PN, DiRusso CC &nbsp;<em>Plant Physiol.</em> 174(4):2146&ndash;2165 &nbsp;PMID: 28652262</p></div></div>
       <div class="pub-item"><div class="pub-yr">2018</div><div><div class="pub-meta"><span>Progress in Lipid Research</span></div><p class="pub-title">Innovations in improving lipid production: Algal chemical genetics</p><p class="pub-authors"><strong>Wase N</strong> (corresponding author), Black P, DiRusso C &nbsp;<em>Prog. Lipid Res.</em> 71:101&ndash;123</p></div></div>
-      <div class="pub-item"><div class="pub-yr">2014</div><div><div class="pub-meta"><span>Journal of Proteome Research</span><span class="badge badge-ha">HIGHLY ACCESSED</span></div><p class="pub-title">Integrated quantitative analysis of nitrogen stress response in Chlamydomonas reinhardtii using metabolite and protein profiling</p><p class="pub-authors"><strong>Wase N</strong>, Black PN, Stanley BA, DiRusso CC &nbsp;<em>J. Proteome Res.</em> 13(3):1373&ndash;1396</p></div></div>
-      <div class="pub-item pub-patent"><div class="pub-yr" style="color:#c8920a">PAT</div><div><div class="pub-meta"><span>US Patent &middot; 2019</span><span class="badge" style="background:#5a4a00;color:#f5c842">PATENT</span></div><p class="pub-title">&#127963; US Patent 10351883 / US20200071735A1 &mdash; Compounds for Increasing Lipid Synthesis and Storage</p><p class="pub-authors">DiRusso C, <strong>Wase N</strong> &nbsp;&middot;&nbsp; Filed: April 25, 2016 &nbsp;&middot;&nbsp; Granted: July 16, 2019</p></div></div>
+      <div class="pub-item"><div class="pub-yr">2014</div><div><div class="pub-meta"><span>Journal of Proteome Research</span><span class="badge badge-ha">Highly Accessed</span></div><p class="pub-title">Integrated quantitative analysis of nitrogen stress response in Chlamydomonas reinhardtii using metabolite and protein profiling</p><p class="pub-authors"><strong>Wase N</strong>, Black PN, Stanley BA, DiRusso CC &nbsp;<em>J. Proteome Res.</em> 13(3):1373&ndash;1396</p></div></div>
+      <div class="pub-item pub-patent"><div class="pub-yr" style="color:#b45309">PAT</div><div><div class="pub-meta"><span>US Patent &middot; 2019</span><span class="badge" style="background:#78350f;color:#fde68a">Patent</span></div><p class="pub-title">&#127963; US Patent 10351883 / US20200071735A1 &mdash; Compounds for Increasing Lipid Synthesis and Storage</p><p class="pub-authors">DiRusso C, <strong>Wase N</strong> &nbsp;&middot;&nbsp; Filed: April 25, 2016 &nbsp;&middot;&nbsp; Granted: July 16, 2019</p></div></div>
     </div>
-    <div class="pub-more"><a href="https://scholar.google.com/citations?user=Y1WeytUAAAAJ" target="_blank" rel="noopener" class="btn btn-outline">VIEW ALL 28+ ON GOOGLE SCHOLAR &rarr;</a></div>
+    <div class="pub-more"><a href="https://scholar.google.com/citations?user=Y1WeytUAAAAJ" target="_blank" rel="noopener" class="btn btn-outline">View all 28+ on Google Scholar &rarr;</a></div>
   </div>
 </section>
 
 <!-- TOOLS -->
 <section class="tools" id="tools">
   <div class="container">
-    <div class="label">OPEN-SOURCE TOOLS</div>
-    <h2 class="sec-title">TOOLS BUILT BECAUSE<br>THEY WERE NEEDED.</h2>
+    <div class="label">Open-Source Tools</div>
+    <h2 class="sec-title">Tools built because<br/>they were needed.</h2>
     <p class="sec-sub">Not built for a CV. Built because the right tool didn&rsquo;t exist and something had to be done about it.</p>
     <div class="tools-grid">
       <div class="tool-card">
-        <div class="tool-icon">DMPK</div>
+        <div class="tool-icon">DMPK Suite</div>
         <h3>MetID DMPK-ADME Suite v3.0</h3>
-        <p>A 13-module browser-based DMPK platform that covers MetID (50 Phase I/II biotransformation rules), NCA pharmacokinetics, ADMET traffic-light scoring, three-engine MS&sup2; prediction, and FDA MIST regulatory reporting &mdash; all in one place. Currently under internal review; happy to walk you through a demonstration.</p>
+        <p>A 13-module browser-based DMPK platform covering MetID (50 Phase I/II biotransformation rules), NCA pharmacokinetics, ADMET traffic-light scoring, three-engine MS&sup2; prediction, and FDA MIST regulatory reporting. Currently under internal review; happy to walk you through a demonstration.</p>
         <div class="tool-mods"><span class="tool-mod">MetID</span><span class="tool-mod">NCA PK</span><span class="tool-mod">ADMET</span><span class="tool-mod">MS&sup2; Prediction</span><span class="tool-mod">FDA MIST</span></div>
         <span class="tool-link" style="color:var(--muted);border-color:var(--muted)">Get in touch for access &rarr;</span>
       </div>
       <div class="tool-card">
-        <div class="tool-icon">ADC</div>
+        <div class="tool-icon">ADC Tools</div>
         <h3>ADC Peptide Mapper + DAR/PK Tracker</h3>
-        <p>Two R-Shiny tools that address real ADC bioanalysis pain points. Peptide Mapper identifies unique ADC signature peptides and exports MRM transitions directly to Thermo or Sciex instrument formats. The DAR/PK Tracker calculates in vivo average DAR over time and runs full NCA via PKNCA &mdash; with publication-quality PDF output.</p>
-        <a href="https://github.com/nishi76/ADC_Peptide_Mapper" target="_blank" rel="noopener" class="tool-link">ADC_Peptide_Mapper</a>&nbsp;&nbsp;
+        <p>Two R-Shiny tools that address real ADC bioanalysis pain points. Peptide Mapper identifies unique ADC signature peptides and exports MRM transitions directly to Thermo or Sciex platforms. The DAR/PK Tracker calculates in vivo average DAR over time and runs full NCA via PKNCA.</p>
+        <a href="https://github.com/nishi76/ADC_Peptide_Mapper" target="_blank" rel="noopener" class="tool-link" style="margin-right:12px">ADC_Peptide_Mapper</a>
         <a href="https://github.com/nishi76/ADC_DAR_PK_app" target="_blank" rel="noopener" class="tool-link">ADC_DAR_PK_app</a>
       </div>
       <div class="tool-card">
-        <div class="tool-icon">MS&sup2;</div>
+        <div class="tool-icon">MS/MS Library</div>
         <h3>MS/MS Spectral Library</h3>
         <p>1,610 high-quality ESI(+) MS/MS spectra covering 509 unique metabolites, IROA-validated and SPLASH-indexed. Deposited to MassBank of North America as a freely available community resource &mdash; because good reference data should be shared, not hoarded.</p>
-        <a href="https://mona.fiehnlab.ucdavis.edu/spectra/browse?query=tags.text:%27POS_Metabolite_IDX%27" target="_blank" rel="noopener" class="tool-link">massbank.us &mdash; BAFUVAPOS series &rarr;</a>
+        <a href="https://mona.fiehnlab.ucdavis.edu/spectra/browse?query=tags.text:%27POS_Metabolite_IDX%27" target="_blank" rel="noopener" class="tool-link">MassBank of North America &rarr;</a>
       </div>
     </div>
   </div>
@@ -492,15 +534,15 @@ a{color:inherit;text-decoration:none}
   <div class="container">
     <div class="contact-grid">
       <div class="contact-info">
-        <div class="label">GET IN TOUCH</div>
-        <h2>WHAT DOES<br>YOUR PROBLEM<br>LOOK LIKE?</h2>
+        <div class="label">Get in Touch</div>
+        <h2>What does your<br/>problem look like?</h2>
         <p>Most analytical problems aren&rsquo;t mysterious &mdash; they&rsquo;re familiar. A method that won&rsquo;t transfer. A screen with rather too many false positives. A regulatory data package that keeps coming back with queries. An omics dataset that produced a beautifully formatted heatmap and precisely no actionable biology. If any of that sounds familiar, let&rsquo;s have a proper conversation about it.</p>
         <div class="ci-row"><span class="ic">&#9993;</span><a href="mailto:nishikant.wase@gmail.com">nishikant.wase@gmail.com</a></div>
         <div class="ci-row"><span class="ic">&#128205;</span><span>Richmond, VA &nbsp;&middot;&nbsp; Happy to travel or work remotely</span></div>
         <div class="ci-row"><span class="ic">&#128188;</span><a href="https://www.linkedin.com/in/nwase" target="_blank" rel="noopener">linkedin.com/in/nwase</a></div>
         <div class="ci-row"><span class="ic">&#128279;</span><a href="https://orcid.org/0000-0002-8955-3300" target="_blank" rel="noopener">ORCID: 0000-0002-8955-3300</a></div>
         <div class="engage-box">
-          <h4>HOW WE MIGHT WORK TOGETHER</h4>
+          <h4>How We Might Work Together</h4>
           <ul>
             <li><strong>Consulting:</strong> Project-based analytical strategy &amp; execution</li>
             <li><strong>Advisory:</strong> Scientific advisory board, expert peer review</li>
@@ -508,35 +550,38 @@ a{color:inherit;text-decoration:none}
             <li><strong>Full-time:</strong> Senior Scientist / Principal Scientist roles genuinely considered</li>
           </ul>
         </div>
-        <a href="assets/cv/NW_CV_2025.pdf" class="btn btn-primary" download style="margin-top:20px;display:inline-block">DOWNLOAD FULL CV (PDF)</a>
+        <a href="assets/cv/NW_CV_2025.pdf" class="btn btn-primary" download style="margin-top:20px;display:inline-block">Download Full CV (PDF)</a>
       </div>
       <div>
-        <form action="mailto:nishikant.wase@gmail.com" method="get" enctype="text/plain">
-          <div class="form-group"><label>NAME &amp; ORGANISATION</label><input type="text" name="name" placeholder="Your name and company" required/></div>
-          <div class="form-group"><label>EMAIL</label><input type="email" name="email" placeholder="your@company.com" required/></div>
-          <div class="form-group">
-            <label>TYPE OF ENGAGEMENT</label>
-            <select name="subject">
-              <option value="">Select...</option>
-              <option>LC-MS Method Development / DMPK</option>
-              <option>Phenotypic HTS &amp; Drug Discovery</option>
-              <option>Multi-Omics Study Design</option>
-              <option>Scientific Advisory / Expert Review</option>
-              <option>Full-time Senior Scientist Role</option>
-              <option>Something else entirely</option>
-            </select>
-          </div>
-          <div class="form-group"><label>DESCRIBE THE PROBLEM</label><textarea name="body" rows="5" placeholder="What are you trying to solve? What have you already tried? What does a good outcome look like for you?"></textarea></div>
-          <button type="submit" class="form-submit">SEND &rarr;</button>
-        </form>
+        <div class="form-wrap">
+          <form action="mailto:nishikant.wase@gmail.com" method="get" enctype="text/plain">
+            <div class="form-group"><label>Name &amp; Organisation</label><input type="text" name="name" placeholder="Your name and company" required/></div>
+            <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="your@company.com" required/></div>
+            <div class="form-group">
+              <label>Type of Engagement</label>
+              <select name="subject">
+                <option value="">Select...</option>
+                <option>LC-MS Method Development / DMPK</option>
+                <option>Phenotypic HTS &amp; Drug Discovery</option>
+                <option>Multi-Omics Study Design</option>
+                <option>Scientific Advisory / Expert Review</option>
+                <option>Full-time Senior Scientist Role</option>
+                <option>Something else entirely</option>
+              </select>
+            </div>
+            <div class="form-group"><label>Describe the Problem</label><textarea name="body" rows="5" placeholder="What are you trying to solve? What have you already tried? What does a good outcome look like for you?"></textarea></div>
+            <button type="submit" class="form-submit">Send Message &rarr;</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
-  <span class="footer-name">NISHIKANT WASE, PhD</span>
-  <span class="footer-copy">&#169; 2025 &middot; Richmond, VA &middot; nishikant.wase@gmail.com &nbsp;&middot;&nbsp; National Overseas Fellow &middot; NSF-EPSCoR PI &middot; US Patent 10351883</span>
+  <div class="footer-brand"><div class="footer-dot"></div><span class="footer-name">Nishikant Wase, PhD</span></div>
+  <span class="footer-copy">National Overseas Fellow &nbsp;&middot;&nbsp; NSF-EPSCoR PI &nbsp;&middot;&nbsp; US Patent 10351883 &nbsp;&middot;&nbsp; Richmond, VA</span>
   <div class="footer-links">
     <a href="https://www.linkedin.com/in/nwase" target="_blank" rel="noopener">LinkedIn</a>
     <a href="https://scholar.google.com/citations?user=Y1WeytUAAAAJ" target="_blank" rel="noopener">Scholar</a>
@@ -552,7 +597,10 @@ window.addEventListener("scroll",function(){
 });
 function tc(id){
   var b=document.getElementById(id+"-b"),t=document.getElementById(id+"-t"),o=b.classList.contains("open");
-  ["cs1","cs2","cs3"].forEach(function(c){document.getElementById(c+"-b").classList.remove("open");document.getElementById(c+"-t").classList.remove("open");});
+  ["cs1","cs2","cs3"].forEach(function(c){
+    document.getElementById(c+"-b").classList.remove("open");
+    document.getElementById(c+"-t").classList.remove("open");
+  });
   if(!o){b.classList.add("open");t.classList.add("open");}
 }
 </script>
